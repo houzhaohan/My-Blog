@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>houzhaohan的博客</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>houzhaohan的博客</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">首页</a>
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 博客列表 -->
+        <section id="blog-list" class="blog-section">
+            <div class="container">
+                <h2 class="section-title">最新文章</h2>
+                <div id="posts-count" class="posts-count">
+                    <!-- 文章总数将通过JavaScript动态更新 -->
+                </div>
+                <div id="posts-container" class="posts-grid">
+                    <!-- 文章列表将通过JavaScript动态加载 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 文章详情 -->
+        <section id="blog-detail" class="blog-detail-section" style="display: none;">
+            <div class="container">
+                <button id="back-btn" class="back-button">
+                    <i class="fas fa-arrow-left"></i> 返回列表
+                </button>
+                <article id="article-content" class="article-content">
+                    <!-- 文章内容将通过JavaScript动态加载 -->
+                </article>
+            </div>
+        </section>
+
+        <!-- 关于页面 -->
+        <section id="about" class="about-section" style="display: none;">
+            <div class="container">
+                <h2 class="section-title">关于我</h2>
+                <div class="about-content">
+                    <p>欢迎来到我的个人博客！这里记录了我的学习笔记、技术分享和生活感悟。</p>
+                    <p>我热爱编程、阅读和技术探索，希望通过这个平台与大家分享我的成长历程。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系页面 -->
+        <section id="contact" class="contact-section" style="display: none;">
+            <div class="container">
+                <h2 class="section-title">联系我</h2>
+                <div class="contact-content">
+                    <p>如果您有任何问题或建议，欢迎通过以下方式联系我：</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> houzhaohan@yeah.net</p>
+                        <!-- <p><i class="fas fa-phone"></i> +86 138-0000-0000</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 houzhaohan的博客. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="js/markdown-it.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
